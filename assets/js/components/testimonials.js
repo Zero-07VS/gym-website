@@ -19,4 +19,34 @@ function renderTestimonials() {
     `).join("");
   }
   
-  document.addEventListener("DOMContentLoaded", renderTestimonials);
+  function initTestimonialsCarousel() {
+    const track = document.getElementById("testimonials-track");
+    if (!track) return;
+  
+    const cards = track.querySelectorAll(".testimonial-card");
+    if (cards.length === 0) return;
+
+    let index = 0;
+
+    // Mostrar solo el primer testimonio al inicio
+    cards.forEach((card, i) => {
+      card.classList.toggle("is-active", i === 0);
+    });
+
+    function showNextTestimonial() {
+      // ocultar actual
+      cards[index].classList.remove("is-active");
+      // siguiente índice
+      index = (index + 1) % cards.length;
+      // mostrar siguiente
+      cards[index].classList.add("is-active");
+    }
+
+    // Cambiar cada 10 segundos (10000 ms)
+    setInterval(showNextTestimonial, 10000);
+  }
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    renderTestimonials();
+    initTestimonialsCarousel();
+  });

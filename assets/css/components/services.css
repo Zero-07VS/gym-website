@@ -4,6 +4,7 @@
     background-color: #262626;
     border: 1px solid rgba(255,255,255,0.05);
     transition: border-color 0.3s;
+    text-align: center;
   }
   .service-card:hover { border-color: rgba(242, 13, 13, 0.5); }
   
@@ -15,7 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.5rem;
+    margin: 0 auto 1.5rem;
     transition: background-color 0.3s;
   }
   .service-card:hover .service-card__icon-wrapper { background-color: #f20d0d; }
