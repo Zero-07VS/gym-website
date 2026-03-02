@@ -1,0 +1,90 @@
+.plan-card {
+    background-color: #1A1A1A;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .plan-card--featured {
+    background-color: #262626;
+    border: 2px solid #f20d0d;
+    transform: scale(1.05);
+    box-shadow: 0 25px 50px -12px rgba(242, 13, 13, 0.2);
+    position: relative;
+  }
+  .plan-card__badge {
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f20d0d;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 900;
+    padding: 0.25rem 1rem;
+    border-radius: 9999px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+  }
+  .plan-card__name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  .plan-card__price-wrapper {
+    display: flex;
+    align-items: baseline;
+    gap: 0.25rem;
+    margin-bottom: 2rem;
+  }
+  .plan-card__price {
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: white;
+  }
+  .plan-card__period { color: #94a3b8; }
+  
+  .plan-card__features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .plan-card__feature {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #cbd5e1;
+    font-size: 0.95rem;
+  }
+  .plan-card__feature--disabled { color: #64748b; text-decoration: line-through; }
+  .plan-card__feature-icon { font-size: 1.25rem; color: #f20d0d; }
+  .plan-card__feature--disabled .plan-card__feature-icon { color: #475569; }
+  
+  .plan-card__btn {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    transition: background-color 0.2s;
+    cursor: pointer;
+  }
+  .plan-card__btn--outline {
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+    background: transparent;
+  }
+  .plan-card__btn--outline:hover { background-color: rgba(255,255,255,0.1); }
+  .plan-card__btn--filled {
+    background-color: #f20d0d;
+    color: white;
+    border: none;
+  }
+  .plan-card__btn--filled:hover { background-color: #b91c1c; }

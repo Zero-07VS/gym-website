@@ -1,0 +1,52 @@
+.social-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 9999px;
+    background-color: #262626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: background-color 0.2s;
+    text-decoration: none;
+  }
+  .social-icon:hover { background-color: #f20d0d; }
+  
+  .footer-heading {
+    color: white;
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  .map-container {
+    height: 16rem;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1);
+    position: relative;
+    filter: grayscale(1);
+    transition: filter 0.5s;
+  }
+  .map-container:hover { filter: grayscale(0); }
+  .map-pin {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+  }
+  .map-pin span {
+    background-color: #f20d0d;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 9999px;
+    box-shadow: 0 10px 15px -3px rgba(242,13,13,0.5);
+    animation: bounce 1s infinite;
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }

@@ -1,0 +1,40 @@
+.service-card {
+    padding: 2rem;
+    border-radius: 0.75rem;
+    background-color: #262626;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: border-color 0.3s;
+  }
+  .service-card:hover { border-color: rgba(242, 13, 13, 0.5); }
+  
+  .service-card__icon-wrapper {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: rgba(242, 13, 13, 0.1);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: background-color 0.3s;
+  }
+  .service-card:hover .service-card__icon-wrapper { background-color: #f20d0d; }
+  
+  .service-card__icon {
+    color: #f20d0d;
+    font-size: 1.875rem;
+    transition: color 0.3s;
+  }
+  .service-card:hover .service-card__icon { color: white; }
+  
+  .service-card__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.75rem;
+  }
+  .service-card__description {
+    color: #94a3b8;
+    font-size: 0.875rem;
+    line-height: 1.75;
+  }

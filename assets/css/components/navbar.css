@@ -1,0 +1,12 @@
+.glass-nav {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+  }
+  .nav-link {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #cbd5e1;
+    transition: color 0.2s;
+    text-decoration: none;
+  }
+  .nav-link:hover { color: #f20d0d; }

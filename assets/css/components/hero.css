@@ -1,0 +1,30 @@
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, black, rgba(0,0,0,0.6), transparent);
+    z-index: 10;
+  }
+  .hero-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(242, 13, 13, 0.5);
+    background-color: rgba(242, 13, 13, 0.1);
+    border-radius: 9999px;
+  }
+  .hero-title {
+    font-size: clamp(3.5rem, 8vw, 5rem);
+    font-weight: 900;
+    color: white;
+    line-height: 1.1;
+    letter-spacing: -0.05em;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+  }
+  .hero-description {
+    font-size: 1.125rem;
+    color: #cbd5e1;
+    margin-bottom: 2.5rem;
+    line-height: 1.75;
+    font-weight: 300;
+  }
