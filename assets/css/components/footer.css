@@ -11,6 +11,12 @@
     text-decoration: none;
   }
   .social-icon:hover { background-color: #f20d0d; }
+
+  .social-icon--text {
+    font-weight: 800;
+    font-size: 1.25rem;
+    line-height: 1;
+  }
   
   .footer-heading {
     color: white;
